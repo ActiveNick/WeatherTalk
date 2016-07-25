@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="WeatherTalkCommandSet_en-us">
+    <CommandPrefix> WeatherTalk, </CommandPrefix>
+    <Example> Give me my daily forecast for Princeton, NJ </Example>
+
+    <Command Name="readDailyForecast">
+      <Example> give me my daily forecast for Princeton, NJ  </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> give [me] my [daily] forecast for {location} </ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> read [me] my [daily] forecast for {location} </ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> read [me] my [daily] {builtin:AppName} forecast for {location} </ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> read [me] my {builtin:AppName} [daily] forecast for {location} </ListenFor>
+      <Feedback> Accessing your daily forecast for {location} </Feedback>
+      <Navigate/>
+    </Command>
+
+<!--    <Command Name="readCommuteForecast">
+      <Example> Read my commute forecast for New York, NY </Example>
+      <ListenFor> read [me] my commute forecast for {location} </ListenFor>
+      <Feedback> Looking for weather conditions en route to {location} </Feedback>
+      <Navigate/>
+    </Command> -->
+
+<!--    <PhraseList Label="location">
+      <Item> Princeton, NJ </Item>
+      <Item> Seattle, WA </Item>
+      <Item> San Francisco, CA </Item>
+    </PhraseList> -->
+
+    <PhraseTopic Label="location" Scenario="Search">
+      <Subject>City/State</Subject>
+    </PhraseTopic>
+  </CommandSet> 
+
+  <!-- Other CommandSets for other languages -->
+
+</VoiceCommands>

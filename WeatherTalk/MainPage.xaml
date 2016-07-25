@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="WeatherTalk.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WeatherTalk"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" RequestedTheme="Dark">
+    <Page.Background>
+        <ImageBrush Stretch="UniformToFill" ImageSource="Assets/Backgrounds/BingWallpaper-2015-04-20.jpg"/>
+    </Page.Background>
+
+    <Grid>  <!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
+        <StackPanel Margin="12,0,0,0">
+            <TextBlock Style="{ThemeResource HeaderTextBlockStyle}" HorizontalAlignment="Left" Margin="12,12,12,12" TextWrapping="Wrap" Text="WeatherTalk" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtLocation" PlaceholderText="type the city name here" Margin="12,0,12,0" RequestedTheme="Light" MaxWidth="400" HorizontalAlignment="Stretch"/>
+            <TextBlock x:Name="lblTempHigh" Style="{ThemeResource BodyTextBlockStyle}" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="12,12,12,0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="lblTempLow" Style="{ThemeResource BodyTextBlockStyle}" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="12,0,12,0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="lblTemp" Text="" Style="{ThemeResource HeaderTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="12,12,12,0" FontSize="84"/>
+            <TextBlock x:Name="lblLocation" Text="" Style="{ThemeResource SubheaderTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="12,0,12,0"/>
+            <ProgressRing x:Name="prgActivity"
+                          IsActive="False"
+                          Foreground="White"
+                          Height="48"
+                          Width="48"/>
+            <TextBlock 
+                x:Name="lblDeviceFamily"
+                Text="{x:Bind DeviceFamily}" 
+                Style="{ThemeResource BodyTextBlockStyle}"
+                Margin="12,0,0,0" />
+            <TextBlock 
+                x:Name="lblDimensions"
+                Text="{x:Bind Dimensions, Mode=OneWay}" 
+                Style="{ThemeResource BodyTextBlockStyle}"
+                Margin="12,0,0,0" />
+        </StackPanel>
+    </Grid>
+
+    <Page.BottomAppBar>
+        <CommandBar Opacity="0.75">
+            <AppBarButton Label="lookup" Icon="Find" Click="ButtonLookup_Click"/>
+            <AppBarButton Label="help" Icon="Help" Click="ButtonHelp_Click"/>
+
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="settings" Icon="Setting" Click="ButtonSettings_Click"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
