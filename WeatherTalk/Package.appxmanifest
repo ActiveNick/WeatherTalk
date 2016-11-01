@@ -4,7 +4,7 @@
   <mp:PhoneIdentity PhoneProductId="e6cf4de8-5ee9-4361-9486-225054cfe629" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>WeatherTalk</DisplayName>
-    <PublisherDisplayName>nicklan</PublisherDisplayName>
+    <PublisherDisplayName>Mobility42 LLC</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -21,11 +21,7 @@
         <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#107C10" />
       </uap:VisualElements>
       <Extensions>
-        <uap:Extension Category="windows.protocol">
-          <uap:Protocol Name="weathertalk">
-            <uap:DisplayName>WeatherTalk</uap:DisplayName>
-          </uap:Protocol>
-        </uap:Extension>
+        <uap:Extension Category="windows.personalAssistantLaunch" />
       </Extensions>
     </Application>
   </Applications>

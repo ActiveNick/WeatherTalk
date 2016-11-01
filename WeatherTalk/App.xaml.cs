@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Microsoft.WindowsAzure.MobileServices;
+using Windows.Storage;
 
 namespace WeatherTalk
 {
@@ -63,11 +64,20 @@ namespace WeatherTalk
                 this.DebugSettings.EnableFrameRateCounter = false;
             }
 #endif
-            var storageFile =
-                await Windows.Storage.StorageFile.GetFileFromApplicationUriAsync(
-                new Uri("ms-appx:///WeatherTalkCommands.xml"));
-            await Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinitionManager
-                .InstallCommandDefinitionsFromStorageFileAsync(storageFile);
+
+            try
+            {
+                // Install the main VCD. Since there's no simple way to test that the VCD has been imported, or that it's your most recent
+                // version, it's not unreasonable to do this upon app load.
+                StorageFile vcdStorageFile = await Package.Current.InstalledLocation.GetFileAsync(@"WeatherTalkCommands.xml");
+                await Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinitionManager
+                    .InstallCommandDefinitionsFromStorageFileAsync(vcdStorageFile);
+            }
+            catch (Exception ex)
+            {
+                //TO DO: We should log this somewhere
+                System.Diagnostics.Debug.WriteLine("Installing Voice Commands Failed: " + ex.ToString());
+            }
 
             rootFrame = Window.Current.Content as Frame;
 
