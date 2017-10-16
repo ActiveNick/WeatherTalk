@@ -5,14 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace WeatherTalk
+namespace OpenWeatherLib
 {
     /// <summary>
     /// Weather Service class to call the OpenWeatherMap API
     /// For live documentation in a Xamarin Workbook on this service class, please refer to
     /// https://github.com/ActiveNick/ActiveNick-Xamarin-Workbooks/tree/master/OpenWeatherMap
     /// </summary>
-    class OpenWeatherMapService
+    public class OpenWeatherMapService
     {
         // TO DO: Get your own API key from http://openweathermap.org, don't use mine
         private const string APIKey = "b843f18aa40c5e8ad3471058123600f3";

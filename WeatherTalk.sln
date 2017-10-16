@@ -1,20 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherTalk", "WeatherTalk\WeatherTalk.csproj", "{C5487CA7-FBA7-42A6-9C9E-76E60430D635}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenWeatherLib", "OpenWeatherLib\OpenWeatherLib.csproj", "{B37FEC1D-F2C5-4270-9797-0F6593B8444D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|ARM = Release|ARM
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5487CA7-FBA7-42A6-9C9E-76E60430D635}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{C5487CA7-FBA7-42A6-9C9E-76E60430D635}.Debug|ARM.ActiveCfg = Debug|ARM
 		{C5487CA7-FBA7-42A6-9C9E-76E60430D635}.Debug|ARM.Build.0 = Debug|ARM
 		{C5487CA7-FBA7-42A6-9C9E-76E60430D635}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -24,6 +29,7 @@ Global
 		{C5487CA7-FBA7-42A6-9C9E-76E60430D635}.Debug|x86.ActiveCfg = Debug|x86
 		{C5487CA7-FBA7-42A6-9C9E-76E60430D635}.Debug|x86.Build.0 = Debug|x86
 		{C5487CA7-FBA7-42A6-9C9E-76E60430D635}.Debug|x86.Deploy.0 = Debug|x86
+		{C5487CA7-FBA7-42A6-9C9E-76E60430D635}.Release|Any CPU.ActiveCfg = Release|x86
 		{C5487CA7-FBA7-42A6-9C9E-76E60430D635}.Release|ARM.ActiveCfg = Release|ARM
 		{C5487CA7-FBA7-42A6-9C9E-76E60430D635}.Release|ARM.Build.0 = Release|ARM
 		{C5487CA7-FBA7-42A6-9C9E-76E60430D635}.Release|ARM.Deploy.0 = Release|ARM
@@ -33,8 +39,27 @@ Global
 		{C5487CA7-FBA7-42A6-9C9E-76E60430D635}.Release|x86.ActiveCfg = Release|x86
 		{C5487CA7-FBA7-42A6-9C9E-76E60430D635}.Release|x86.Build.0 = Release|x86
 		{C5487CA7-FBA7-42A6-9C9E-76E60430D635}.Release|x86.Deploy.0 = Release|x86
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Debug|ARM.Build.0 = Debug|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Debug|x64.Build.0 = Debug|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Debug|x86.Build.0 = Debug|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Release|ARM.ActiveCfg = Release|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Release|ARM.Build.0 = Release|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Release|x64.ActiveCfg = Release|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Release|x64.Build.0 = Release|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Release|x86.ActiveCfg = Release|Any CPU
+		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71DD31C4-F79C-454F-856C-2B3B76DD6FDC}
 	EndGlobalSection
 EndGlobal

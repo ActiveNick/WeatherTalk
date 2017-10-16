@@ -17,8 +17,7 @@ using Windows.Media.SpeechSynthesis;
 using Windows.System.Profile;
 using System.ComponentModel;
 using Windows.UI.ViewManagement;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+using OpenWeatherLib;
 
 namespace WeatherTalk
 {
