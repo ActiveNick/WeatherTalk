@@ -1,10 +1,12 @@
 # WeatherTalk
 Windows 10 / UWP sample weather app written in C# for phones, tablets, desktops, IoT devices, Xbox & HoloLens. This project is used as a demo for various presentations on building UWP apps for Windows 10, as well as integrating speech and Azure in apps.
 
+Note that this project was updated to Windows 10 Fall Creators Update (build 16299 minimum) with the Weather class now in a .NET Standard 2.0 library. As such it can only be opened in Visual Studio 2017 Update 4 or higher.
+
 ## Current Features
 The app supports the following features:
 
-- Pull weather forecast data from OpenWeatherMap.org
+- Pull weather forecast data from OpenWeatherMap.org (packaged in a reusable .NET Standard 2.0 library)
 - Simple adaptive UI across various Windows 10 form factors & screens
 - Text-to-speech support to speak the forecast out loud using the default system voice
 - Save cities being queried in an Azure Mobile Service table
