@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2002
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherTalk", "WeatherTalk\WeatherTalk.csproj", "{C5487CA7-FBA7-42A6-9C9E-76E60430D635}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenWeatherLib", "OpenWeatherLib\OpenWeatherLib.csproj", "{B37FEC1D-F2C5-4270-9797-0F6593B8444D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenWeatherLib", "OpenWeatherLib\OpenWeatherLib.csproj", "{B37FEC1D-F2C5-4270-9797-0F6593B8444D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenWeatherLib.UWP", "OpenWeatherLib.UWP\OpenWeatherLib.UWP.csproj", "{FC91B202-EAF9-4462-931A-C851B3ABDD23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,22 @@ Global
 		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Release|x64.Build.0 = Release|Any CPU
 		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Release|x86.ActiveCfg = Release|Any CPU
 		{B37FEC1D-F2C5-4270-9797-0F6593B8444D}.Release|x86.Build.0 = Release|Any CPU
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Debug|ARM.ActiveCfg = Debug|ARM
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Debug|ARM.Build.0 = Debug|ARM
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Debug|x64.ActiveCfg = Debug|x64
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Debug|x64.Build.0 = Debug|x64
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Debug|x86.ActiveCfg = Debug|x86
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Debug|x86.Build.0 = Debug|x86
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Release|ARM.ActiveCfg = Release|ARM
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Release|ARM.Build.0 = Release|ARM
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Release|x64.ActiveCfg = Release|x64
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Release|x64.Build.0 = Release|x64
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Release|x86.ActiveCfg = Release|x86
+		{FC91B202-EAF9-4462-931A-C851B3ABDD23}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

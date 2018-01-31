@@ -169,7 +169,8 @@ namespace WeatherTalk
         private async void ButtonHelp_Click(object sender, RoutedEventArgs e)
         {
             var dlg = new Windows.UI.Popups.MessageDialog("This feature is not implemented yet.", "Help");
-            await dlg.ShowAsync();
+            //await dlg.ShowAsync();
+            throw new ApplicationException("Something horrible happened");
         }
 
         private async void ButtonSettings_Click(object sender, RoutedEventArgs e)
